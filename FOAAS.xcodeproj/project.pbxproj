@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		213F2A61AF66104E3269AFDE /* libPods-FOAAS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A08D86C1A5D96FEB0B0276E0 /* libPods-FOAAS.a */; };
+		F920DE751C76350F004CFB17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE741C76350F004CFB17 /* main.m */; };
+		F920DE781C76350F004CFB17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE771C76350F004CFB17 /* AppDelegate.m */; };
+		F920DE7B1C76350F004CFB17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE7A1C76350F004CFB17 /* ViewController.m */; };
+		F920DE7E1C76350F004CFB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F920DE7C1C76350F004CFB17 /* Main.storyboard */; };
+		F920DE801C76350F004CFB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F920DE7F1C76350F004CFB17 /* Assets.xcassets */; };
+		F920DE831C76350F004CFB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F920DE811C76350F004CFB17 /* LaunchScreen.storyboard */; };
+		F920DE8B1C763771004CFB17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F920DE8A1C763771004CFB17 /* AVFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24D4569049AA95430C7E7EFD /* Pods-FOAAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAAS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS.debug.xcconfig"; sourceTree = "<group>"; };
+		A08D86C1A5D96FEB0B0276E0 /* libPods-FOAAS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FOAAS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F920DE701C76350F004CFB17 /* FOAAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOAAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F920DE741C76350F004CFB17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F920DE761C76350F004CFB17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F920DE771C76350F004CFB17 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F920DE791C76350F004CFB17 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F920DE7A1C76350F004CFB17 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F920DE7D1C76350F004CFB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F920DE7F1C76350F004CFB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F920DE821C76350F004CFB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F920DE841C76350F004CFB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F920DE8A1C763771004CFB17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE7EBEA1A516680036E3B4CC /* Pods-FOAAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F920DE6D1C76350F004CFB17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F920DE8B1C763771004CFB17 /* AVFoundation.framework in Frameworks */,
+				213F2A61AF66104E3269AFDE /* libPods-FOAAS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18AEBC9F371DC219F956CB14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24D4569049AA95430C7E7EFD /* Pods-FOAAS.debug.xcconfig */,
+				FE7EBEA1A516680036E3B4CC /* Pods-FOAAS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF25A08BABB64727FA904436 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A08D86C1A5D96FEB0B0276E0 /* libPods-FOAAS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F920DE671C76350F004CFB17 = {
+			isa = PBXGroup;
+			children = (
+				F920DE8A1C763771004CFB17 /* AVFoundation.framework */,
+				F920DE721C76350F004CFB17 /* FOAAS */,
+				F920DE711C76350F004CFB17 /* Products */,
+				18AEBC9F371DC219F956CB14 /* Pods */,
+				EF25A08BABB64727FA904436 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F920DE711C76350F004CFB17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F920DE701C76350F004CFB17 /* FOAAS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F920DE721C76350F004CFB17 /* FOAAS */ = {
+			isa = PBXGroup;
+			children = (
+				F920DE761C76350F004CFB17 /* AppDelegate.h */,
+				F920DE771C76350F004CFB17 /* AppDelegate.m */,
+				F920DE791C76350F004CFB17 /* ViewController.h */,
+				F920DE7A1C76350F004CFB17 /* ViewController.m */,
+				F920DE7C1C76350F004CFB17 /* Main.storyboard */,
+				F920DE7F1C76350F004CFB17 /* Assets.xcassets */,
+				F920DE811C76350F004CFB17 /* LaunchScreen.storyboard */,
+				F920DE841C76350F004CFB17 /* Info.plist */,
+				F920DE731C76350F004CFB17 /* Supporting Files */,
+			);
+			path = FOAAS;
+			sourceTree = "<group>";
+		};
+		F920DE731C76350F004CFB17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F920DE741C76350F004CFB17 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F920DE6F1C76350F004CFB17 /* FOAAS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F920DE871C76350F004CFB17 /* Build configuration list for PBXNativeTarget "FOAAS" */;
+			buildPhases = (
+				09DFA32B3EE44ADD2ECB4340 /* Check Pods Manifest.lock */,
+				F920DE6C1C76350F004CFB17 /* Sources */,
+				F920DE6D1C76350F004CFB17 /* Frameworks */,
+				F920DE6E1C76350F004CFB17 /* Resources */,
+				A468891FD4A27C7AB291445B /* Embed Pods Frameworks */,
+				5DC3AC77EFA0AE1E43946170 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FOAAS;
+			productName = FOAAS;
+			productReference = F920DE701C76350F004CFB17 /* FOAAS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F920DE681C76350F004CFB17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = FOAAS;
+				TargetAttributes = {
+					F920DE6F1C76350F004CFB17 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F920DE6B1C76350F004CFB17 /* Build configuration list for PBXProject "FOAAS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F920DE671C76350F004CFB17;
+			productRefGroup = F920DE711C76350F004CFB17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F920DE6F1C76350F004CFB17 /* FOAAS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F920DE6E1C76350F004CFB17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F920DE831C76350F004CFB17 /* LaunchScreen.storyboard in Resources */,
+				F920DE801C76350F004CFB17 /* Assets.xcassets in Resources */,
+				F920DE7E1C76350F004CFB17 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09DFA32B3EE44ADD2ECB4340 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5DC3AC77EFA0AE1E43946170 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A468891FD4A27C7AB291445B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F920DE6C1C76350F004CFB17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F920DE7B1C76350F004CFB17 /* ViewController.m in Sources */,
+				F920DE781C76350F004CFB17 /* AppDelegate.m in Sources */,
+				F920DE751C76350F004CFB17 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F920DE7C1C76350F004CFB17 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F920DE7D1C76350F004CFB17 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F920DE811C76350F004CFB17 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F920DE821C76350F004CFB17 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F920DE851C76350F004CFB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F920DE861C76350F004CFB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F920DE881C76350F004CFB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24D4569049AA95430C7E7EFD /* Pods-FOAAS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FOAAS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tibikolozsi.FOAAS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F920DE891C76350F004CFB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE7EBEA1A516680036E3B4CC /* Pods-FOAAS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FOAAS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tibikolozsi.FOAAS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F920DE6B1C76350F004CFB17 /* Build configuration list for PBXProject "FOAAS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F920DE851C76350F004CFB17 /* Debug */,
+				F920DE861C76350F004CFB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F920DE871C76350F004CFB17 /* Build configuration list for PBXNativeTarget "FOAAS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F920DE881C76350F004CFB17 /* Debug */,
+				F920DE891C76350F004CFB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F920DE681C76350F004CFB17 /* Project object */;
+}
