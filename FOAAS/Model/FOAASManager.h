@@ -10,4 +10,7 @@
 
 @interface FOAASManager : NSObject
 
++ (void)getOperationsWithSuccess:(void (^)(id _Nullable))success
+                         failure:(void (^)(NSError * _Nonnull))failure;
+
 @end

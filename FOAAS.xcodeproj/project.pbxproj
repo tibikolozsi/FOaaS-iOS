@@ -15,6 +15,13 @@
 		F920DE801C76350F004CFB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F920DE7F1C76350F004CFB17 /* Assets.xcassets */; };
 		F920DE831C76350F004CFB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F920DE811C76350F004CFB17 /* LaunchScreen.storyboard */; };
 		F920DE8B1C763771004CFB17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F920DE8A1C763771004CFB17 /* AVFoundation.framework */; };
+		F920DEA51C77798B004CFB17 /* FOAASManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEA41C77798B004CFB17 /* FOAASManager.m */; };
+		F920DEA81C7779E9004CFB17 /* FOAASOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEA71C7779E9004CFB17 /* FOAASOperation.m */; };
+		F920DEAB1C777CFF004CFB17 /* FOAASField.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEAA1C777CFF004CFB17 /* FOAASField.m */; };
+		F920DEAF1C778201004CFB17 /* StickCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEAE1C778201004CFB17 /* StickCollectionViewFlowLayout.m */; };
+		F920DEB21C7784FB004CFB17 /* StickyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEB11C7784FB004CFB17 /* StickyCollectionViewCell.m */; };
+		F920DEB61C778970004CFB17 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEB51C778970004CFB17 /* UIColor+Hex.m */; };
+		F920DEB91C778B70004CFB17 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEB81C778B70004CFB17 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +38,20 @@
 		F920DE821C76350F004CFB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F920DE841C76350F004CFB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F920DE8A1C763771004CFB17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F920DEA31C77798B004CFB17 /* FOAASManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOAASManager.h; path = Model/FOAASManager.h; sourceTree = "<group>"; };
+		F920DEA41C77798B004CFB17 /* FOAASManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOAASManager.m; path = Model/FOAASManager.m; sourceTree = "<group>"; };
+		F920DEA61C7779E9004CFB17 /* FOAASOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOAASOperation.h; path = Model/FOAASOperation.h; sourceTree = "<group>"; };
+		F920DEA71C7779E9004CFB17 /* FOAASOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOAASOperation.m; path = Model/FOAASOperation.m; sourceTree = "<group>"; };
+		F920DEA91C777CFF004CFB17 /* FOAASField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOAASField.h; sourceTree = "<group>"; };
+		F920DEAA1C777CFF004CFB17 /* FOAASField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOAASField.m; sourceTree = "<group>"; };
+		F920DEAD1C778201004CFB17 /* StickCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		F920DEAE1C778201004CFB17 /* StickCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		F920DEB01C7784FB004CFB17 /* StickyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StickyCollectionViewCell.h; sourceTree = "<group>"; };
+		F920DEB11C7784FB004CFB17 /* StickyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StickyCollectionViewCell.m; sourceTree = "<group>"; };
+		F920DEB41C778970004CFB17 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		F920DEB51C778970004CFB17 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		F920DEB71C778B70004CFB17 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		F920DEB81C778B70004CFB17 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		FE7EBEA1A516680036E3B4CC /* Pods-FOAAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,10 +107,15 @@
 		F920DE721C76350F004CFB17 /* FOAAS */ = {
 			isa = PBXGroup;
 			children = (
+				F920DEB31C778970004CFB17 /* Helpers */,
+				F920DEAC1C778201004CFB17 /* StickyCollectionView */,
+				F920DEA21C77796A004CFB17 /* Model */,
 				F920DE761C76350F004CFB17 /* AppDelegate.h */,
 				F920DE771C76350F004CFB17 /* AppDelegate.m */,
 				F920DE791C76350F004CFB17 /* ViewController.h */,
 				F920DE7A1C76350F004CFB17 /* ViewController.m */,
+				F920DEB71C778B70004CFB17 /* DetailViewController.h */,
+				F920DEB81C778B70004CFB17 /* DetailViewController.m */,
 				F920DE7C1C76350F004CFB17 /* Main.storyboard */,
 				F920DE7F1C76350F004CFB17 /* Assets.xcassets */,
 				F920DE811C76350F004CFB17 /* LaunchScreen.storyboard */,
@@ -105,6 +131,39 @@
 				F920DE741C76350F004CFB17 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F920DEA21C77796A004CFB17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F920DEA31C77798B004CFB17 /* FOAASManager.h */,
+				F920DEA41C77798B004CFB17 /* FOAASManager.m */,
+				F920DEA61C7779E9004CFB17 /* FOAASOperation.h */,
+				F920DEA71C7779E9004CFB17 /* FOAASOperation.m */,
+				F920DEA91C777CFF004CFB17 /* FOAASField.h */,
+				F920DEAA1C777CFF004CFB17 /* FOAASField.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F920DEAC1C778201004CFB17 /* StickyCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F920DEAD1C778201004CFB17 /* StickCollectionViewFlowLayout.h */,
+				F920DEAE1C778201004CFB17 /* StickCollectionViewFlowLayout.m */,
+				F920DEB01C7784FB004CFB17 /* StickyCollectionViewCell.h */,
+				F920DEB11C7784FB004CFB17 /* StickyCollectionViewCell.m */,
+			);
+			path = StickyCollectionView;
+			sourceTree = "<group>";
+		};
+		F920DEB31C778970004CFB17 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F920DEB41C778970004CFB17 /* UIColor+Hex.h */,
+				F920DEB51C778970004CFB17 /* UIColor+Hex.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F920DEA81C7779E9004CFB17 /* FOAASOperation.m in Sources */,
+				F920DEAB1C777CFF004CFB17 /* FOAASField.m in Sources */,
 				F920DE7B1C76350F004CFB17 /* ViewController.m in Sources */,
+				F920DEB21C7784FB004CFB17 /* StickyCollectionViewCell.m in Sources */,
+				F920DEB61C778970004CFB17 /* UIColor+Hex.m in Sources */,
+				F920DEB91C778B70004CFB17 /* DetailViewController.m in Sources */,
 				F920DE781C76350F004CFB17 /* AppDelegate.m in Sources */,
+				F920DEA51C77798B004CFB17 /* FOAASManager.m in Sources */,
+				F920DEAF1C778201004CFB17 /* StickCollectionViewFlowLayout.m in Sources */,
 				F920DE751C76350F004CFB17 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

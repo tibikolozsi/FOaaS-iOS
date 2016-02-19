@@ -10,4 +10,9 @@
 
 @interface FOAASField : NSObject
 
+@property (nonatomic, strong) NSString *field;
+@property (nonatomic, strong) NSString *name;
+
+- (instancetype)initWithJSON:(NSDictionary *)JSON;
+
 @end

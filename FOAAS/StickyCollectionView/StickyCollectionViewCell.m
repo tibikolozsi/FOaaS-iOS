@@ -8,6 +8,20 @@
 
 #import "StickyCollectionViewCell.h"
 
+@interface StickyCollectionViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIView *customBackgroundView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@end
+
 @implementation StickyCollectionViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    
+    self.customBackgroundView.layer.cornerRadius = 12.f;
+    self.customBackgroundView.layer.masksToBounds = YES;
+}
 
 @end

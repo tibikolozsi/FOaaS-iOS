@@ -6,5 +6,6 @@
 target 'FOAAS' do
 	pod 'AFNetworking'
 	pod 'pop'
+	pod 'STPopup'
 end
 

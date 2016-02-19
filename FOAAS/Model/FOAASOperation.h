@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FOAASField.h"
 
 @interface FOAASOperation : NSObject
+
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *url;
+@property (nonatomic, strong) NSArray<FOAASField *> *fields;
+
+- (instancetype)initWithJSON:(NSDictionary *)JSON;
 
 @end

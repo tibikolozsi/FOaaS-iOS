@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FOAASOperation.h"
 
 @interface DetailViewController : UIViewController
+
+@property (nonatomic, strong) FOAASOperation *operation;
 
 @end

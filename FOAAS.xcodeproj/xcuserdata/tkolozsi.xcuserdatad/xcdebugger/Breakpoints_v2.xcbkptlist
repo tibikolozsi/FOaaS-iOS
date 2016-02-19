@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FOAAS/ViewController.m"
-            timestampString = "477509379.578593"
+            timestampString = "477597857.476317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "-speakText:"
             landmarkType = "5">
          </BreakpointContent>

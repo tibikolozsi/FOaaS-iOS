@@ -10,4 +10,7 @@
 
 @interface StickyCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic, readonly) UIView *customBackgroundView;
+@property (weak, nonatomic, readonly) UILabel *titleLabel;
+
 @end
