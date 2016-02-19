@@ -16,8 +16,6 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
-FOASS.xcworkspace
-*.xcuserstate
 
 ## Other
 *.moved-aside
