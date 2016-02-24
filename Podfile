@@ -7,5 +7,6 @@ use_frameworks!
 target 'FOAAS' do
 	pod 'AFNetworking'
 	pod 'pop'
+	pod 'MMPulseView'
 end
 
