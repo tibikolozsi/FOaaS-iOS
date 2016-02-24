@@ -9,6 +9,7 @@
 #import "FOAASManager.h"
 #import <AFNetworking/AFNetworking.h>
 #import "FOAASOperation.h"
+#import "FOAASResponse.h"
 
 @implementation FOAASManager
 
@@ -32,5 +33,27 @@
         }
     }];
 }
+
++ (void)getResponseWithOperationString:(NSString *)operationString
+                               success:(void (^)(FOAASResponse * _Nullable foasResponse))success
+                               failure:(void (^)(NSError * _Nonnull error))failure {
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
+    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    NSString *getURLString = [NSString stringWithFormat:@"https://foaas.com%@", operationString];
+    [manager GET:getURLString parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        id JSON = [NSJSONSerialization JSONObjectWithData:responseObject options:kNilOptions error:nil];
+        FOAASResponse *response = [[FOAASResponse alloc] initWithJSON:JSON];
+        if (success) {
+            success(response);
+        }
+    } failure:^(NSURLSessionTask *operation, NSError *error) {
+        if (failure) {
+            failure(error);
+        }
+    }];
+}
+
 
 @end

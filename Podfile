@@ -8,5 +8,6 @@ target 'FOAAS' do
 	pod 'AFNetworking'
 	pod 'pop'
 	pod 'MMPulseView'
+	pod "ParkedTextField"
 end
 

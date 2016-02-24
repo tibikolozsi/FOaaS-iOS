@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B0DCCC0D6B25B6788DA2370D /* Pods_FOAAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD86B4E0381C23AD9FB1393 /* Pods_FOAAS.framework */; };
+		F91013D31C7E5A9400E3A8B9 /* FOAASResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F91013D21C7E5A9400E3A8B9 /* FOAASResponse.m */; };
 		F920DE751C76350F004CFB17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE741C76350F004CFB17 /* main.m */; };
 		F920DE781C76350F004CFB17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE771C76350F004CFB17 /* AppDelegate.m */; };
 		F920DE7B1C76350F004CFB17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE7A1C76350F004CFB17 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		24D4569049AA95430C7E7EFD /* Pods-FOAAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAAS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS.debug.xcconfig"; sourceTree = "<group>"; };
 		5AD86B4E0381C23AD9FB1393 /* Pods_FOAAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FOAAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91013D11C7E5A9400E3A8B9 /* FOAASResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FOAASResponse.h; path = Model/FOAASResponse.h; sourceTree = "<group>"; };
+		F91013D21C7E5A9400E3A8B9 /* FOAASResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FOAASResponse.m; path = Model/FOAASResponse.m; sourceTree = "<group>"; };
 		F920DE701C76350F004CFB17 /* FOAAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOAAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F920DE741C76350F004CFB17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F920DE761C76350F004CFB17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				F920DEA71C7779E9004CFB17 /* FOAASOperation.m */,
 				F920DEA91C777CFF004CFB17 /* FOAASField.h */,
 				F920DEAA1C777CFF004CFB17 /* FOAASField.m */,
+				F91013D11C7E5A9400E3A8B9 /* FOAASResponse.h */,
+				F91013D21C7E5A9400E3A8B9 /* FOAASResponse.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				F920DEB61C778970004CFB17 /* UIColor+Hex.m in Sources */,
 				F920DEB91C778B70004CFB17 /* DetailViewController.m in Sources */,
 				F920DE781C76350F004CFB17 /* AppDelegate.m in Sources */,
+				F91013D31C7E5A9400E3A8B9 /* FOAASResponse.m in Sources */,
 				F920DED11C77A585004CFB17 /* CustomSnapBehavior.m in Sources */,
 				F920DED01C77A585004CFB17 /* ElasticTransition.m in Sources */,
 				F920DEA51C77798B004CFB17 /* FOAASManager.m in Sources */,

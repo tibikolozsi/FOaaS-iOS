@@ -8,9 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+@class FOAASResponse;
+
 @interface FOAASManager : NSObject
 
 + (void)getOperationsWithSuccess:(void (^)(id _Nullable))success
                          failure:(void (^)(NSError * _Nonnull))failure;
+
++ (void)getResponseWithOperationString:(NSString *)operationString
+                               success:(void (^)(FOAASResponse * _Nullable foasResponse))success
+                               failure:(void (^)(NSError * _Nonnull error))failure;
 
 @end
