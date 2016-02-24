@@ -74,7 +74,7 @@
     self.pulseView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.bgView addSubview:btn];
     [btn setBackgroundImage:[UIImage imageNamed:@"button"] forState:UIControlStateNormal];
-    [btn setTitle:@"Tap" forState:UIControlStateNormal];
+    [btn setTitle:@"" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(actionPulse) forControlEvents:UIControlEventTouchUpInside];
     [self.bgView insertSubview:self.pulseView belowSubview:btn];
     
@@ -297,5 +297,10 @@
     }
     return self;
 }
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 
 @end
