@@ -100,29 +100,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-HL-2CL">
-                                <rect key="frame" x="20" y="10" width="280" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSs-Hq-jnC">
-                                <rect key="frame" x="137" y="350" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohg-Yi-a6H">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-HL-2CL">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSs-Hq-jnC">
+                                        <rect key="frame" x="137" y="185" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="7dd-HL-2CL" firstAttribute="top" secondItem="Ohg-Yi-a6H" secondAttribute="top" constant="8" id="BVO-FU-5Ce"/>
+                                    <constraint firstItem="7dd-HL-2CL" firstAttribute="centerX" secondItem="Ohg-Yi-a6H" secondAttribute="centerX" id="HdK-Yj-eua"/>
+                                    <constraint firstAttribute="trailing" secondItem="7dd-HL-2CL" secondAttribute="trailing" id="K8m-cw-sOm"/>
+                                    <constraint firstItem="7dd-HL-2CL" firstAttribute="leading" secondItem="Ohg-Yi-a6H" secondAttribute="leading" id="Us1-2M-9v5"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QSs-Hq-jnC" firstAttribute="centerX" secondItem="sLL-IF-urx" secondAttribute="centerX" id="4Az-nt-21C"/>
-                            <constraint firstItem="77l-RI-PLF" firstAttribute="top" secondItem="QSs-Hq-jnC" secondAttribute="bottom" constant="20" id="Ts1-Jg-1Mf"/>
-                            <constraint firstItem="7dd-HL-2CL" firstAttribute="top" secondItem="sLL-IF-urx" secondAttribute="top" constant="10" id="X0R-Jf-Qc5"/>
-                            <constraint firstItem="7dd-HL-2CL" firstAttribute="leading" secondItem="sLL-IF-urx" secondAttribute="leading" constant="20" id="aUg-el-xnP"/>
-                            <constraint firstItem="7dd-HL-2CL" firstAttribute="centerX" secondItem="sLL-IF-urx" secondAttribute="centerX" id="cIy-4l-dp8"/>
-                            <constraint firstAttribute="trailing" secondItem="7dd-HL-2CL" secondAttribute="trailing" constant="20" id="oWA-BJ-lYE"/>
+                            <constraint firstAttribute="trailing" secondItem="Ohg-Yi-a6H" secondAttribute="trailing" id="3ZJ-ED-Gt3"/>
+                            <constraint firstItem="Ohg-Yi-a6H" firstAttribute="top" secondItem="sLL-IF-urx" secondAttribute="top" id="Gaa-u0-FFd"/>
+                            <constraint firstItem="Ohg-Yi-a6H" firstAttribute="leading" secondItem="sLL-IF-urx" secondAttribute="leading" id="Mp8-6n-Yb8"/>
+                            <constraint firstItem="77l-RI-PLF" firstAttribute="top" secondItem="Ohg-Yi-a6H" secondAttribute="bottom" id="vP2-gU-uxN"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="400"/>
                     <connections>
+                        <outlet property="bgView" destination="Ohg-Yi-a6H" id="EyU-Dc-QNz"/>
                         <outlet property="titleLabel" destination="7dd-HL-2CL" id="uM4-F6-uKF"/>
                     </connections>
                 </viewController>

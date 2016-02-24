@@ -16,6 +16,7 @@
                          failure:(void (^)(NSError * _Nonnull))failure {
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     [manager GET:@"https://foaas.com/operations" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+        NSLog(@"%@", responseObject);
         NSMutableArray<FOAASOperation *> *operations = [[NSMutableArray alloc] init];
         for (id obj in responseObject) {
             FOAASOperation *operation = [[FOAASOperation alloc] initWithJSON:obj];

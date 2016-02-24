@@ -14,4 +14,6 @@
 
 @property (nonatomic, strong) FOAASOperation *operation;
 
+@property (nonatomic, strong) UIColor *backgroundColor;
+
 @end

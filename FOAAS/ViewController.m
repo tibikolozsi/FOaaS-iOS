@@ -104,17 +104,8 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
         currentDetailViewController.transitioningDelegate = self.transition;
         currentDetailViewController.modalPresentationStyle = UIModalPresentationCustom;
         currentDetailViewController.operation = self.currentOperation;
-        currentDetailViewController.view.backgroundColor = [self colorForIndex:[self.operations indexOfObject:self.currentOperation]];
+        currentDetailViewController.backgroundColor = [self colorForIndex:[self.operations indexOfObject:self.currentOperation]];
         
-        CGRect rect = CGRectMake(0, 0, currentDetailViewController.view.bounds.size.width, currentDetailViewController.contentLength);
-        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect
-                                                       byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)
-                                                             cornerRadii:CGSizeMake(12.0, 12.0)];
-        
-        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-        maskLayer.frame = rect;
-        maskLayer.path = maskPath.CGPath;
-        currentDetailViewController.view.layer.mask = maskLayer;
     }
 }
 

@@ -9,9 +9,11 @@
 #import "DetailViewController.h"
 #import "FOAAS-Bridging-Header.h"
 #import "ElasticTransition.h"
+#import "FOAASOperation.h"
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *bgView;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 
 
@@ -24,6 +26,22 @@
     [super viewDidLoad];
     
     self.titleLabel.text = self.operation.name;
+    self.bgView.backgroundColor = self.backgroundColor;
+    
+    CGRect rect = CGRectMake(0, 0, self.view.bounds.size.width, self.contentLength);
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect
+                                                   byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)
+                                                         cornerRadii:CGSizeMake(12.0, 12.0)];
+    
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = rect;
+    maskLayer.path = maskPath.CGPath;
+    self.bgView.layer.mask = maskLayer;
+    self.bgView.clipsToBounds = NO;
+    
+    for (FOAASField *field in self.operation.fields) {
+        NSLog(@"field: %@", field);
+    }
 }
 
 - (BOOL)dismissByBackgroundDrag {
