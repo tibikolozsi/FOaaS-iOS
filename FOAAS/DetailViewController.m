@@ -7,7 +7,8 @@
 //
 
 #import "DetailViewController.h"
-#import <STPopup/STPopup.h>
+#import "FOAAS-Bridging-Header.h"
+#import "ElasticTransition.h"
 
 @interface DetailViewController ()
 
@@ -25,8 +26,24 @@
     self.titleLabel.text = self.operation.name;
 }
 
+- (BOOL)dismissByBackgroundDrag {
+    return YES;
+}
+
+- (BOOL)dismissByBackgroundTouch {
+    return YES;
+}
+
+- (BOOL)dismissByForegroundDrag {
+    return YES;
+}
+
+- (CGFloat)contentLength {
+    return 400;
+}
+
 - (void)commonInit {
-    self.contentSizeInPopup = CGSizeMake([UIScreen mainScreen].bounds.size.width, 400);
+//    self.contentSizeInPopup = CGSizeMake([UIScreen mainScreen].bounds.size.width, 400);
     self.navigationController.navigationBarHidden = YES;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:nil];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:nil];

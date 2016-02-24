@@ -12,8 +12,9 @@
 #import "FOAASOperation.h"
 #import "StickyCollectionViewCell.h"
 #import "UIColor+Hex.h"
-#import <STPopup/STPopup.h>
 #import "DetailViewController.h"
+#import "FOAAS-Bridging-Header.h"
+#import "ElasticTransition.h"
 
 static const float kCellHeight = 100.f;
 static const float kItemSpace = -20.f;
@@ -27,7 +28,8 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
-@property (nonatomic, strong) DetailViewController *currentDetailViewController;
+@property (nonatomic, strong) FOAASOperation *currentOperation;
+@property (nonatomic, strong) ElasticTransition *transition;
 
 @end
 
@@ -41,6 +43,11 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     __weak ViewController *weakSelf = self;
+    
+    self.transition = [[ElasticTransition alloc] init];
+    self.transition.sticky = YES;
+    self.transition.transformType = NONE;
+    self.transition.edge = BOTTOM;
 
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [weakSelf speakText:@"Hello"];
@@ -74,53 +81,45 @@ static NSString *kCellIdentifier = @"kCellIdentifier";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     StickyCollectionViewCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:kCellIdentifier forIndexPath:indexPath];
-    cell.customBackgroundView.backgroundColor = [self colorForIndexPath:indexPath];
+    cell.customBackgroundView.backgroundColor = [self colorForIndex:indexPath.item];
     FOAASOperation *currentOperation = self.operations[indexPath.item];
     cell.titleLabel.text = currentOperation.name;
     
     return cell;
 }
 
-- (UIColor *)colorForIndexPath:(NSIndexPath *)indexPath {
-    UIColor *color = [UIColor colorFromHexString:self.colorsArray[indexPath.item % self.colorsArray.count]];
+- (UIColor *)colorForIndex:(NSUInteger)index {
+    UIColor *color = [UIColor colorFromHexString:self.colorsArray[index % self.colorsArray.count]];
     return color;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    FOAASOperation *currentOperation = self.operations[indexPath.item];
-
-    self.currentDetailViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DetailViewController"];
-    self.currentDetailViewController.operation = currentOperation;
-    STPopupController *popupController = [[STPopupController alloc] initWithRootViewController:self.currentDetailViewController];
-    [popupController setNavigationBarHidden:YES];
-    UIView *containerView = [popupController containerView];
-    containerView.backgroundColor = [UIColor clearColor];
-    self.currentDetailViewController.view.backgroundColor = [self colorForIndexPath:indexPath];
-    
-    CGRect rect = CGRectMake(0, 0, self.currentDetailViewController.contentSizeInPopup.width, self.currentDetailViewController.contentSizeInPopup.height);
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect
-                                     byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)
-                                           cornerRadii:CGSizeMake(12.0, 12.0)];
-    
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = rect;
-    maskLayer.path = maskPath.CGPath;
-    containerView.layer.mask = maskLayer;
-    
-    popupController.style = STPopupStyleBottomSheet;
-    if (NSClassFromString(@"UIBlurEffect")) {
-        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-        popupController.backgroundView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-    }
-    [popupController.backgroundView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundViewDidTap)]];
-    [popupController presentInViewController:self];
+    self.currentOperation = self.operations[indexPath.item];
+    [self performSegueWithIdentifier:@"kDetailSegue" sender:self];
 }
 
-- (void)backgroundViewDidTap {
-    __weak ViewController *weakSelf = self;
-    [self.currentDetailViewController.popupController dismissWithCompletion:^{
-        weakSelf.currentDetailViewController = nil;
-    }];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"kDetailSegue"]) {
+        DetailViewController *currentDetailViewController = (DetailViewController *)segue.destinationViewController;
+        currentDetailViewController.transitioningDelegate = self.transition;
+        currentDetailViewController.modalPresentationStyle = UIModalPresentationCustom;
+        currentDetailViewController.operation = self.currentOperation;
+        currentDetailViewController.view.backgroundColor = [self colorForIndex:[self.operations indexOfObject:self.currentOperation]];
+        
+        CGRect rect = CGRectMake(0, 0, currentDetailViewController.view.bounds.size.width, currentDetailViewController.contentLength);
+        UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:rect
+                                                       byRoundingCorners:(UIRectCornerTopLeft|UIRectCornerTopRight)
+                                                             cornerRadii:CGSizeMake(12.0, 12.0)];
+        
+        CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+        maskLayer.frame = rect;
+        maskLayer.path = maskPath.CGPath;
+        currentDetailViewController.view.layer.mask = maskLayer;
+    }
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark -=CollectionView layout=-

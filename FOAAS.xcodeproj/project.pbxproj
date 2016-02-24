@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		213F2A61AF66104E3269AFDE /* libPods-FOAAS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A08D86C1A5D96FEB0B0276E0 /* libPods-FOAAS.a */; };
+		B0DCCC0D6B25B6788DA2370D /* Pods_FOAAS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD86B4E0381C23AD9FB1393 /* Pods_FOAAS.framework */; };
 		F920DE751C76350F004CFB17 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE741C76350F004CFB17 /* main.m */; };
 		F920DE781C76350F004CFB17 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE771C76350F004CFB17 /* AppDelegate.m */; };
 		F920DE7B1C76350F004CFB17 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DE7A1C76350F004CFB17 /* ViewController.m */; };
@@ -22,11 +22,17 @@
 		F920DEB21C7784FB004CFB17 /* StickyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEB11C7784FB004CFB17 /* StickyCollectionViewCell.m */; };
 		F920DEB61C778970004CFB17 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEB51C778970004CFB17 /* UIColor+Hex.m */; };
 		F920DEB91C778B70004CFB17 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEB81C778B70004CFB17 /* DetailViewController.m */; };
+		F920DECE1C77A585004CFB17 /* EdgePanTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEC01C77A585004CFB17 /* EdgePanTransition.m */; };
+		F920DECF1C77A585004CFB17 /* ElasticShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEC21C77A585004CFB17 /* ElasticShapeLayer.m */; };
+		F920DED01C77A585004CFB17 /* ElasticTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEC41C77A585004CFB17 /* ElasticTransition.m */; };
+		F920DED11C77A585004CFB17 /* CustomSnapBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEC71C77A585004CFB17 /* CustomSnapBehavior.m */; };
+		F920DED21C77A585004CFB17 /* DynamicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DEC91C77A585004CFB17 /* DynamicItem.m */; };
+		F920DED31C77A585004CFB17 /* HelperFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = F920DECB1C77A585004CFB17 /* HelperFunctions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24D4569049AA95430C7E7EFD /* Pods-FOAAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAAS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS.debug.xcconfig"; sourceTree = "<group>"; };
-		A08D86C1A5D96FEB0B0276E0 /* libPods-FOAAS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FOAAS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD86B4E0381C23AD9FB1393 /* Pods_FOAAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FOAAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F920DE701C76350F004CFB17 /* FOAAS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOAAS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F920DE741C76350F004CFB17 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F920DE761C76350F004CFB17 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +58,21 @@
 		F920DEB51C778970004CFB17 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		F920DEB71C778B70004CFB17 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		F920DEB81C778B70004CFB17 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		F920DEBB1C77A0A1004CFB17 /* FOAAS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FOAAS-Bridging-Header.h"; sourceTree = "<group>"; };
+		F920DEBF1C77A585004CFB17 /* EdgePanTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgePanTransition.h; sourceTree = "<group>"; };
+		F920DEC01C77A585004CFB17 /* EdgePanTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgePanTransition.m; sourceTree = "<group>"; };
+		F920DEC11C77A585004CFB17 /* ElasticShapeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElasticShapeLayer.h; sourceTree = "<group>"; };
+		F920DEC21C77A585004CFB17 /* ElasticShapeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElasticShapeLayer.m; sourceTree = "<group>"; };
+		F920DEC31C77A585004CFB17 /* ElasticTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElasticTransition.h; sourceTree = "<group>"; };
+		F920DEC41C77A585004CFB17 /* ElasticTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElasticTransition.m; sourceTree = "<group>"; };
+		F920DEC61C77A585004CFB17 /* CustomSnapBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSnapBehavior.h; sourceTree = "<group>"; };
+		F920DEC71C77A585004CFB17 /* CustomSnapBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSnapBehavior.m; sourceTree = "<group>"; };
+		F920DEC81C77A585004CFB17 /* DynamicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicItem.h; sourceTree = "<group>"; };
+		F920DEC91C77A585004CFB17 /* DynamicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicItem.m; sourceTree = "<group>"; };
+		F920DECA1C77A585004CFB17 /* HelperFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelperFunctions.h; sourceTree = "<group>"; };
+		F920DECB1C77A585004CFB17 /* HelperFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelperFunctions.m; sourceTree = "<group>"; };
+		F920DECC1C77A585004CFB17 /* PointExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointExtension.h; sourceTree = "<group>"; };
+		F920DECD1C77A585004CFB17 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		FE7EBEA1A516680036E3B4CC /* Pods-FOAAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOAAS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOAAS/Pods-FOAAS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +82,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F920DE8B1C763771004CFB17 /* AVFoundation.framework in Frameworks */,
-				213F2A61AF66104E3269AFDE /* libPods-FOAAS.a in Frameworks */,
+				B0DCCC0D6B25B6788DA2370D /* Pods_FOAAS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +101,7 @@
 		EF25A08BABB64727FA904436 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A08D86C1A5D96FEB0B0276E0 /* libPods-FOAAS.a */,
+				5AD86B4E0381C23AD9FB1393 /* Pods_FOAAS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +128,7 @@
 		F920DE721C76350F004CFB17 /* FOAAS */ = {
 			isa = PBXGroup;
 			children = (
+				F920DEBE1C77A570004CFB17 /* Elastic */,
 				F920DEB31C778970004CFB17 /* Helpers */,
 				F920DEAC1C778201004CFB17 /* StickyCollectionView */,
 				F920DEA21C77796A004CFB17 /* Model */,
@@ -121,6 +143,7 @@
 				F920DE811C76350F004CFB17 /* LaunchScreen.storyboard */,
 				F920DE841C76350F004CFB17 /* Info.plist */,
 				F920DE731C76350F004CFB17 /* Supporting Files */,
+				F920DEBB1C77A0A1004CFB17 /* FOAAS-Bridging-Header.h */,
 			);
 			path = FOAAS;
 			sourceTree = "<group>";
@@ -164,6 +187,35 @@
 				F920DEB51C778970004CFB17 /* UIColor+Hex.m */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F920DEBE1C77A570004CFB17 /* Elastic */ = {
+			isa = PBXGroup;
+			children = (
+				F920DEBF1C77A585004CFB17 /* EdgePanTransition.h */,
+				F920DEC01C77A585004CFB17 /* EdgePanTransition.m */,
+				F920DEC11C77A585004CFB17 /* ElasticShapeLayer.h */,
+				F920DEC21C77A585004CFB17 /* ElasticShapeLayer.m */,
+				F920DEC31C77A585004CFB17 /* ElasticTransition.h */,
+				F920DEC41C77A585004CFB17 /* ElasticTransition.m */,
+				F920DEC51C77A585004CFB17 /* Utils */,
+			);
+			name = Elastic;
+			sourceTree = "<group>";
+		};
+		F920DEC51C77A585004CFB17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F920DEC61C77A585004CFB17 /* CustomSnapBehavior.h */,
+				F920DEC71C77A585004CFB17 /* CustomSnapBehavior.m */,
+				F920DEC81C77A585004CFB17 /* DynamicItem.h */,
+				F920DEC91C77A585004CFB17 /* DynamicItem.m */,
+				F920DECA1C77A585004CFB17 /* HelperFunctions.h */,
+				F920DECB1C77A585004CFB17 /* HelperFunctions.m */,
+				F920DECC1C77A585004CFB17 /* PointExtension.h */,
+				F920DECD1C77A585004CFB17 /* Utils.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,13 +340,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				F920DEA81C7779E9004CFB17 /* FOAASOperation.m in Sources */,
+				F920DECE1C77A585004CFB17 /* EdgePanTransition.m in Sources */,
 				F920DEAB1C777CFF004CFB17 /* FOAASField.m in Sources */,
+				F920DED21C77A585004CFB17 /* DynamicItem.m in Sources */,
 				F920DE7B1C76350F004CFB17 /* ViewController.m in Sources */,
+				F920DED31C77A585004CFB17 /* HelperFunctions.m in Sources */,
 				F920DEB21C7784FB004CFB17 /* StickyCollectionViewCell.m in Sources */,
 				F920DEB61C778970004CFB17 /* UIColor+Hex.m in Sources */,
 				F920DEB91C778B70004CFB17 /* DetailViewController.m in Sources */,
 				F920DE781C76350F004CFB17 /* AppDelegate.m in Sources */,
+				F920DED11C77A585004CFB17 /* CustomSnapBehavior.m in Sources */,
+				F920DED01C77A585004CFB17 /* ElasticTransition.m in Sources */,
 				F920DEA51C77798B004CFB17 /* FOAASManager.m in Sources */,
+				F920DECF1C77A585004CFB17 /* ElasticShapeLayer.m in Sources */,
 				F920DEAF1C778201004CFB17 /* StickCollectionViewFlowLayout.m in Sources */,
 				F920DE751C76350F004CFB17 /* main.m in Sources */,
 			);
@@ -407,10 +465,13 @@
 			baseConfigurationReference = 24D4569049AA95430C7E7EFD /* Pods-FOAAS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FOAAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tibikolozsi.FOAAS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FOAAS/FOAAS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -419,10 +480,12 @@
 			baseConfigurationReference = FE7EBEA1A516680036E3B4CC /* Pods-FOAAS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FOAAS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tibikolozsi.FOAAS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FOAAS/FOAAS-Bridging-Header.h";
 			};
 			name = Release;
 		};

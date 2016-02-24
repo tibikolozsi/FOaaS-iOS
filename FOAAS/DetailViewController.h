@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "FOAASOperation.h"
+#import "ElasticTransition.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <ElasticMenuTransitionDelegate>
 
 @property (nonatomic, strong) FOAASOperation *operation;
 

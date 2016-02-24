@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-gK-wSk">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <collectionViewLayout key="collectionViewLayout" id="KpW-tj-T4X" customClass="StickCollectionViewFlowLayout"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kCellIdentifier" id="3qa-bd-nI1" customClass="StickyCollectionViewCell">
@@ -64,16 +64,24 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iAk-gK-wSk" secondAttribute="bottom" id="76E-sM-Tjp"/>
                             <constraint firstAttribute="trailing" secondItem="iAk-gK-wSk" secondAttribute="trailing" id="ROP-c2-WXq"/>
                             <constraint firstItem="iAk-gK-wSk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tej-7X-231"/>
+                            <constraint firstItem="iAk-gK-wSk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="i2y-re-jH4"/>
                             <constraint firstItem="iAk-gK-wSk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="is7-RG-TPB"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="is7-RG-TPB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="collectionView" destination="iAk-gK-wSk" id="OzY-xb-vuF"/>
+                        <segue destination="u8a-C3-K2f" kind="presentation" identifier="kDetailSegue" modalTransitionStyle="coverVertical" id="Wx6-ah-TYS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
